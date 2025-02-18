@@ -78,26 +78,33 @@ adc_joystick/
 ## Como Compilar e Executar
 
 1. **Preparação do Ambiente:**
-   ```# Defina o caminho para o Raspberry Pi Pico SDK
-export PICO_SDK_PATH=/caminho/para/pico-sdk
+   
+    Defina o caminho para o Raspberry Pi Pico SDK
+    ```bash
+    export PICO_SDK_PATH=/caminho/para/pico-sdk
+    ```
 
-# Crie o diretório de build e entre nele
+Crie o diretório de build e entre nele
+```bash
 mkdir build
 cd build
+```
 
-# Configure o projeto usando o Ninja como gerador
+Configure o projeto usando o Ninja como gerador
+```bash
 cmake -G "Ninja" ..
  ```
 
 2. **Compilação:**
-   ```# Compile o projeto usando o Ninja
-ninja
+```bash
+  Compile o projeto usando o Ninja
+  ninja
 ```
 
 3. **Gravação:**
    ```bash
-   # Conecte a placa BitDogLab no modo de programação (BOOTSEL pressionado durante reset)
-   cp adc_joystick.uf2 /caminho/para/RPI-RP2
+    Conecte a placa BitDogLab no modo de programação (BOOTSEL pressionado durante reset)
+    cp adc_joystick.uf2 /caminho/para/RPI-RP2
    ```
 
 **Nota:** Este projeto foi desenvolvido com o objetivo de aplicar os conceitos de programação em sistemas embarcados utilizando o RP2040, com foco na integração de periféricos analógicos e digitais.
